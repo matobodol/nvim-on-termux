@@ -33,11 +33,10 @@ Plug 'luochen1990/rainbow'
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'navarasu/onedark.nvim'
-Plug 'tomasr/molokai'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
 
@@ -76,18 +75,14 @@ let g:airline#extensions#tabline#show_tab_count = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_filetype = 1
 
-set laststatus=2
-"let g:airline_theme='gruvvbox'
-let g:airline_thene='molokai'
-
 " set colorscheme
+let g:airline_theme='onedark'
 syntax enable
 set termguicolors
 colorscheme onedark
-" colorscheme molokai
-" colorscheme gruvbox
 
 set number
+set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
